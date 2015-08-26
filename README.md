@@ -1,55 +1,7 @@
-# StayPuft
+# twilightFactor
 
-A fork of Casper, the default theme for [Ghost](https://github.com/tryghost/ghost/).
+A fork of [StayPuft](https://github.com/dlecina/StayPuft).
 
-## Ghost Version
-
-StayPuft tries to match Casper's version numbering system. That is, StayPuft version A.B.C should roughly have the same (or more) features as Casper version A.B.C. Features and bug fixes may be added between major versions, so the best way to stay updated is to clone and pull changes from the repo.
-
-**The current StayPuft version is 1.1.3, and should work with Ghost 0.5.6, as well as some (but not all) older versions.**
-
-If the current version of StayPuft is not compatible with the version of Ghost you're running, try looking for an older one in the [Releases section](https://github.com/dlecina/StayPuft/releases).
-
-## Features
-
-* Responsive design.
-* Post comments using [Disqus](http://disqus.com/).
-* In-site search using [GhostHunter](https://github.com/i11ume/ghostHunter).
-* Support for [Font Awesome](https://github.com/FortAwesome/Font-Awesome).
-* Basic support for [slidr.js](https://github.com/bchanx/slidr).
-* Syntax highlighting using [Prism](https://github.com/LeaVerou/prism/).
-* [Google Analytics](http://www.google.com/analytics/).
-
-## Demo
-
-This theme is being used in my [blog](http://davidlecina.com/).
-
-*  ["Welcome to Ghost" post](http://davidlecina.com/blog/welcome-to-ghost/).
-*  [Prism demo](http://davidlecina.com/blog/prism-demo/).
-
-## Installation
-
-* Clone this repository on your themes folder:
-
-```
-cd ghost/content/themes
-sudo git clone https://github.com/dlecina/StayPuft
-```
-
-* **[Configure](#configuration) the theme.**
-* Restart Ghost.
-* Select the theme in your Settings page.
-
-## Configuration
-
-* Replace `assets/favicon.png` with your own favicon, or remove for the default Ghost favicon.
-* Modify `partials/disqus.hbs` with your shortname.
-* Modify `partials/google-analytics.hbs` with your own snippet.
-* Replace `partials/copyright.hbs` with your own disclaimer.
-* Modify `partials/sidebar-external.hbs` with your own external links.
-* After configuration, you may have to restart for all changes to take place.
-
-## Copyright & License
 
 Original Copyright (c) 2013-2014 Ghost Foundation - Released under The MIT License.  
 Modifications Copyright (c) 2014 David Lecina Fuentes - Released under The MIT License.
