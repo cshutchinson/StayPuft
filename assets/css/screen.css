@@ -507,7 +507,7 @@ margin on the iframe, cause it breaks stuff. */
 .blog-title {
     margin: 0 0 10px 0;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     text-shadow: 0 1px 6px rgba(0,0,0,0.1);
     text-indent: 0px;
@@ -520,9 +520,9 @@ margin on the iframe, cause it breaks stuff. */
 
 .blog-description {
     color: #BBC4C9;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.3em;
-    font-weight: 300;
+    font-weight: 300
     font-family: 'Roboto', sans-serif;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
     text-indent: 0px;
