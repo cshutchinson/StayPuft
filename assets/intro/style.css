@@ -1,3 +1,40 @@
-p {
-  
+div {
+  background-color: #C3CAC7;
+  float: left;
+  border-color: #ff0000;
+  border-width: 5px;
+  border-style: solid;
+  margin: 10px;
+  width: 262px;
+  padding: 25px;
+  text-align: center;
+  height: 184px;
+}
+section {
+  display: block;
+  width: 700px;
+}
+.hidden {
+  background-image: url('homer.gif');
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  border-style: inset;
+}
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.topLeft {
+  background-position: top left;
+}
+.topRight {
+  background-position: top right;
+}
+.bottomLeft {
+  background-position: bottom left;
+}
+.bottomRight {
+  background-position: bottom right;
 }
