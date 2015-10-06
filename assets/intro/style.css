@@ -13,6 +13,8 @@
   background-color: white;
 }
 .helloText {
+  margin-left: 5%;
+  letter-spacing: .5em;
   text-align: center;
   position: relative;
   font-size: 100px;
@@ -30,6 +32,7 @@
 }
 
 .movingText {
+  display: none;
   text-align: center;
   font-family: 'Roboto Mono';
   margin-left: 20px;
@@ -37,10 +40,10 @@
   top: -520px;
   height: 325px;
 }
-ul {
+.navbar{
   list-style-type: none;
 }
-li {
+.navListItem {
   text-align: center;
   font-size: 30px;
   font-family: 'Roboto Mono';
@@ -56,4 +59,13 @@ a {
 }
 .highlighted {
   color: crimson;
+}
+.contact, .family, .interests, .about{
+  display: none;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  margin-left: 20px;
+  position: absolute;
+  top: 160px;
+  height: 325px;
 }
