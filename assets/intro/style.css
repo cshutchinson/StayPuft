@@ -1,40 +1,59 @@
-div {
-  background-color: #C3CAC7;
-  float: left;
-  border-color: #ff0000;
-  border-width: 5px;
-  border-style: solid;
-  margin: 10px;
-  width: 262px;
-  padding: 25px;
+.nameCard {
+  height: 600px;
+  background-color: #485C63;
+  border-radius: 10px;
+  border: solid black 1px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+.nameCardWriteArea {
+  position: relative;
+  top: 155px;
+  height: 350px;
+  background-color: white;
+}
+.helloText {
   text-align: center;
-  height: 184px;
+  position: relative;
+  font-size: 100px;
+  top: -424px;
+  color: white;
 }
-section {
+.helloSmallText {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  position: relative;
+  top: -505px;
+  color: white;
+}
+
+.movingText {
+  text-align: center;
+  font-family: 'Roboto Mono';
+  margin-left: 20px;
+  position: relative;
+  top: -520px;
+  height: 325px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto Mono';
+  position: relative;
+  top: -85px;
+  display: inline-block;
+  color: white;
+  float: left;
+  width: 25%;
+}
+a {
   display: block;
-  width: 700px;
 }
-.hidden {
-  background-image: url('homer.gif');
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-color: #000000;
-  border-style: inset;
-}
-.hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.topLeft {
-  background-position: top left;
-}
-.topRight {
-  background-position: top right;
-}
-.bottomLeft {
-  background-position: bottom left;
-}
-.bottomRight {
-  background-position: bottom right;
+.highlighted {
+  color: crimson;
 }
