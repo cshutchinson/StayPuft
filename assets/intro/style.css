@@ -48,8 +48,7 @@ a {
   display: block;
 }
 .highlighted {
-  color: cornsilk;
-  font-size: 35px;
+  color: crimson;
 }
 .contact, .family, .interests, .about, .intro, .home, .page2{
   display: none;
@@ -64,7 +63,7 @@ a {
   display: inherit;
   padding-top: 10px;
   font-family: 'Amatic SC', cursive;
-  font-size: 50px;
+  font-size: 40px;
   color: #3D53C7;
   letter-spacing: .25em;
   top: 190px;
