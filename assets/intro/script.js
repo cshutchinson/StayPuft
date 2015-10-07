@@ -39,4 +39,8 @@ $(document).ready(function(){
     subSections.hide();
     $('.page2').toggle();
   });
+  $('#home').on('click', function(){
+    subSections.hide();
+    $('.intro').toggle();
+  });
 });
