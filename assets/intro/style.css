@@ -65,7 +65,7 @@ a {
   padding-top: 10px;
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
-  color: #7D8FF1;
+  color: #3D53C7;
   letter-spacing: .25em;
   top: 190px;
 }
@@ -85,4 +85,9 @@ a {
   top: 275px;
   font-family: 'Roboto Mono';
   font-size: 24px;
+}
+.home {
+  display: block;
+  position: absolute;
+  top: 25px;
 }
