@@ -64,9 +64,10 @@ a {
   display: inherit;
   padding-top: 10px;
   font-family: 'Amatic SC', cursive;
-  font-size: 40px;
+  font-size: 50px;
   color: #7D8FF1;
   letter-spacing: .25em;
+  top: 190px;
 }
 .center {
     margin: auto;
