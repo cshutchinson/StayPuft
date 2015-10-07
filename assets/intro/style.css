@@ -86,7 +86,7 @@ a {
   font-size: 24px;
 }
 .home {
-  display: block;
+  display: inherit;
   position: absolute;
   top: 25px;
 }
