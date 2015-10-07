@@ -7,29 +7,36 @@ $(document).ready(function(){
     $(this).toggleClass('highlighted');
   });
   // click interactions for main navbar
-  var subSections = $('.contact, .family, .interests, .about, .intro');
+  var subSections = $('.contact, .family, .interests, .about, .intro, .page2');
+  var ids = $('#contact, #family, #interests, #about, #intro, #page2');
   $('li').on('click', '#about', function(){
-    $('#contact, #family, #interests, #about').removeClass('highlighted');
+    ids.removeClass('highlighted');
     $(this).addClass('highlighted');
     subSections.hide();
     $('.about').toggle();
   });
   $('li').on('click', '#family', function(){
-    $('#contact, #family, #interests, #about').removeClass('highlighted');
+    ids.removeClass('highlighted');
     $(this).addClass('highlighted');
     subSections.hide();
     $('.family').fadeToggle();
   });
   $('li').on('click', '#interests', function(){
-    $('#contact, #family, #interests, #about').removeClass('highlighted');
+    ids.removeClass('highlighted');
     $(this).addClass('highlighted');
     subSections.hide();
     $('.interests').toggle();
   });
   $('li').on('click', '#contact', function(){
-    $('#contact, #family, #interests, #about').removeClass('highlighted');
+    ids.removeClass('highlighted');
     $(this).addClass('highlighted');
     subSections.hide();
     $('.contact').toggle();
+  });
+  $('li').on('click', '#page2', function(){
+    ids.removeClass('highlighted');
+    $(this).addClass('highlighted');
+    subSections.hide();
+    $('.page2').toggle();
   });
 });

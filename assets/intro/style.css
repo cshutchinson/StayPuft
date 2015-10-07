@@ -35,14 +35,14 @@
 }
 .navListItem {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Roboto Mono';
   position: relative;
   top: -85px;
   display: inline-block;
   color: white;
   float: left;
-  width: 25%;
+  width: 19%;
 }
 a {
   display: block;
@@ -51,7 +51,7 @@ a {
   color: cornsilk;
   font-size: 35px;
 }
-.contact, .family, .interests, .about, .intro, .home{
+.contact, .family, .interests, .about, .intro, .home, .page2{
   display: none;
   text-align: center;
   font-family: 'Roboto Mono';
@@ -81,8 +81,8 @@ a {
 .interests {
   top: 240px;
 }
-.contact {
-  top: 275px;
+.contact, .page2 {
+  top: 260px;
   font-family: 'Roboto Mono';
   font-size: 24px;
 }
