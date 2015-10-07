@@ -30,16 +30,6 @@
   top: -505px;
   color: white;
 }
-
-.movingText {
-  display: none;
-  text-align: center;
-  font-family: 'Roboto Mono';
-  margin-left: 20px;
-  position: relative;
-  top: -520px;
-  height: 325px;
-}
 .navbar{
   list-style-type: none;
 }
@@ -58,14 +48,40 @@ a {
   display: block;
 }
 .highlighted {
-  color: crimson;
+  color: cornsilk;
+  font-size: 35px;
 }
-.contact, .family, .interests, .about{
+.contact, .family, .interests, .about, .intro, .home{
   display: none;
   text-align: center;
   font-family: 'Roboto Mono';
   margin-left: 20px;
   position: absolute;
-  top: 160px;
-  height: 325px;
+  top: 210px;
+  height: 205px;
+}
+.intro {
+  display: inherit;
+  padding-top: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: #7D8FF1;
+  letter-spacing: .25em;
+}
+.center {
+    margin: auto;
+    width: 100%;
+}
+.about {
+  font-size: 24px;
+  text-align: center;
+  top: 220px;
+}
+.interests {
+  top: 240px;
+}
+.contact {
+  top: 275px;
+  font-family: 'Roboto Mono';
+  font-size: 24px;
 }
