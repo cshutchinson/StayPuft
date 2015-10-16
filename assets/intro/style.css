@@ -1,6 +1,10 @@
+body {
+  background-color: #898989;
+}
 .nameCard {
   height: 600px;
-  background-color: #485C63;
+  margin: 50px;
+  background-color: #67799D;
   border-radius: 10px;
   border: solid black 1px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -60,13 +64,12 @@ a {
   height: 205px;
 }
 .intro {
-  display: inherit;
+  display: block;
   padding-top: 10px;
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
   color: #3D53C7;
   letter-spacing: .25em;
-  top: 190px;
 }
 .center {
     margin: auto;
@@ -75,7 +78,7 @@ a {
 .about {
   font-size: 24px;
   text-align: center;
-  top: 220px;
+  top: 250px;
 }
 .interests {
   top: 240px;
@@ -88,5 +91,48 @@ a {
 .home {
   display: inherit;
   position: absolute;
-  top: 25px;
+  top: 75px;
+  left: 50px;
+}
+.leftNav {
+  display: none;
+  position: absolute;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: rgba(0,0,0, 0.45);
+  border-radius: 5px;
+  font-size: 46px;
+  top: 340px;
+  left: 8%;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  z-index: 10;
+}
+.rightNav {
+  display: block;
+  position: absolute;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: rgba(0,0,0, 0.45);
+  border-radius: 5px;
+  font-size: 46px;
+  top: 340px;
+  right: 8%;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  z-index: 10;
+}
+
+.nav-hover {
+  color: chartreuse;
+  cursor: pointer;
+
+}
+.navfade {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
