@@ -83,7 +83,6 @@ $(document).ready(function(){
     }
   });
 
-  
 });
 
 function changePanel(change){
