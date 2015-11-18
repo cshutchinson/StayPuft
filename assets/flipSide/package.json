@@ -1,0 +1,36 @@
+{
+  "name": "flipside",
+  "version": "0.0.1",
+  "description": "a picture based matching game in HTML",
+  "main": "game.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cshutchinson/flipSide.git"
+  },
+  "keywords": [
+    "game",
+    "HTML",
+    "jQuery",
+    "javascript",
+    "promises"
+  ],
+  "author": "christopher hutchinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cshutchinson/flipSide/issues"
+  },
+  "homepage": "https://github.com/cshutchinson/flipSide#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-webpack": "^1.5.0",
+    "webpack": "^1.12.6"
+  },
+  "dependencies": {
+    "requirejs": "^2.1.20"
+  }
+}
