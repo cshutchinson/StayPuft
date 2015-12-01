@@ -1,0 +1,236 @@
+main, body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+  background-image: url('/media/restaurant-hero-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.orderbackground {
+	height: 675px;
+	background: linear-gradient(to bottom right, orange, #8C4F06);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'Open Sans', sans-serif;
+}
+
+span {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.companyname {
+  margin-top: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: white;
+}
+
+.tagline {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: white;
+}
+
+.info {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  width: 20%;
+  margin-left: 10%;
+  /*padding-left: 1%;*/
+  text-align: justify;
+  vertical-align: text-top;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  background-color: black;
+  color: white;
+  height: 30px;
+  margin-top: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+.orderfooter {
+  margin-top: 0px;
+}
+
+.orderbutton {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .7em;
+  margin-top: 20px;
+  width: 60%;
+  height: 45px;
+  border: none;
+  background-color: rgba(73, 184, 99, .8);
+  color: white;
+	transition:background-color .3s ease-out;
+}
+
+.orderbutton:hover {
+	background-color: rgba(73, 184, 99, 1);
+}
+
+.orderleft, .orderright {
+	font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+	width: 35%;
+}
+
+.orderleft {
+	margin-left: 20%;
+	height: 600px;
+}
+
+.orderright {
+	width: 250px;
+	height: 600px;
+}
+
+.menu, .menu1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	height: 200px;
+	background-color: white;
+	color: black;
+	overflow-y: auto;
+	padding-top: 10px;
+}
+
+.menu1 {
+	background-color: transparent;
+}
+
+.receipt {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
+	height: 400px;
+	background-color: white;
+	color: black;
+	overflow-y: auto;
+	padding-top: 20px;
+}
+
+.ordersummary {
+	position: absolute;
+	top: 400px;
+}
+
+table {
+  border-spacing: 0px 0px;
+}
+
+.menu td {
+	width: 250px;
+  padding-left: 30px;
+}
+
+.menu td.price {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.menu td.foodtype {
+	text-align: left;
+	padding-left: 10px;
+	font-size: .75em;
+	font-weight: bolder;
+}
+
+.receipt td {
+	width: 110px;
+	padding-left: 10px;
+	font-size: .9em;
+	text-align: left;
+}
+
+.ordersummary td.title {
+	width: 70px;
+	padding-left: 80px;
+	font-size: .9em;
+	text-align: left;
+}
+
+.receipt td.price {
+	font-size: .9em;
+	text-align: right;
+}
+
+.receipt td.subtotal,
+.receipt td.tax,
+.receipt td.total {
+	font-size: .9em;
+	text-align: right;
+	width: 80px;
+}
+
+.selected {
+	background-color: yellow;
+}
+
+label {
+	display: block;
+	font-size: .4em;
+}
+
+.qtyadd, .deliver{
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 10px;
+}
+
+.qtyadd input {
+	width: 20px;
+}
+
+.deliverIt {
+	display: block;
+	margin-top: 10px;
+	width: 95%;
+	height: 30px;
+	font-size: 1em;
+	color: white;
+	background-color: green;
+	transition:background-color .1s ease-out;
+}
+
+.additembutton {
+	color: white;
+	background-color: blue;
+	width: 100px;
+	height: 30px;
+	font-size: 1em;
+	margin-left: 20px;
+	transition:background-color .1s ease-out;
+}
+
+.deliverIt:hover {
+background-color: rgba(0, 255, 0, .9);
+}
+
+.additembutton:hover {
+background-color: rgba(0, 0, 255, .9);
+}
+
+
+#name, #phone, #address {
+	height: 20px;
+	width: 93%;
+}
+
+#qty {
+	height: 20px;
+	width: 5%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="styles.css" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <section class="orderbackground">
+      <header><h1 class="companyname">Galvanize Eats</h1></header>
+      <div class="orderleft">
+        <div class="menu">
+        </div>
+        <div class="menu1">
+          <div class="qtyadd">
+            <label for="qty">Quantity</label>
+            <input type="text" id="qty" value="1">
+            <button class="additembutton">Add Item</button>
+          </div>
+          <div class="deliver">
+            <label for="name">Name</label>
+            <input type="text" id="name" value="">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" value="">
+            <label for="address">Address</label>
+            <input type="text" id="address" value="">
+            <button class="deliverIt">Deliver It!</button>
+          </div>
+        </div>
+      </div>
+      <div class="orderright">
+        <div class="receipt">
+        </div>
+      </div>
+    </section>
+    <footer class="orderfooter">
+      <span><i class="fa fa-copyright"></i> Galvanize, 2015</span>
+      &#9884
+      <span>Denver, Colorado</span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="retrieveMenu.js"></script>
+  </body>
+</html>
