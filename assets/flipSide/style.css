@@ -11,23 +11,44 @@ h1.introh1 {
   color: red;
 }
 
-.game-status {
+.game-highscore {
   display: inline-block;
+  margin: -10px 20px 0px 20px;
+}
+.game-score {
+  display: inline-block;
+  margin: -10px 450px 0px 20px;
 }
 
-.gameplay  {
+.gameplay {
   font-family: 'Squada One', cursive;
+  font-size: 1.4em;
+  color: gold;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
-.scorenumeric  {
+
+.scorenumeric {
   font-family: 'Squada One', cursive;
-  font-size: 1.6em;
-  padding-left: 20px;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+.highscorenumeric {
+  font-family: 'Squada One', cursive;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+.control-buttons {
+  padding-left: 15px;
+  margin-top: -10px;
 }
 
 .turnMessage {
   font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.1em;
   margin-top: -15px;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 h2.introh2 {
@@ -73,7 +94,7 @@ p.introp {
 }
 
 .main {
-  background: rgba(0,0,24, .45);
+  background: rgba(0,0,24, .65);
   height: 660px;
   width: 660px;
   padding: 10px;
@@ -81,12 +102,6 @@ p.introp {
   margin-top: 50px;
   margin-left:auto;
   margin-right:auto;
-}
-
-.shadow {
-  -moz-box-shadow:    1px 0px 2px 2px #ccc;
-  -webkit-box-shadow: 1px 0px 2px 2px #ccc;
-  box-shadow:         1px 0px 2px 2px #ccc;
 }
 
 .container{
@@ -112,10 +127,11 @@ p.introp {
 
 .face.front {
   background:aliceblue;
-  background-image: url(flipSide.gif);
+  background-image: url(flipSide.png);
   background-size: 75px 75px;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .face.back {
@@ -124,8 +140,6 @@ p.introp {
   padding: 0px;
   color: white;
   text-align: center;
-  /*background-color: #111;*/
-  /*outline: 1px solid black;*/
 }
 
 .container{
@@ -135,12 +149,13 @@ p.introp {
   transform-style: preserve-3d;
   transition: all .25s linear;
 }
+
 .flip {
   transform: rotateX(180deg);  //changed 11-18
 }
 .matched {
   transform: rotateX(180deg);
-  border: 2px solid green;
+  border: 1px solid gold;
 }
 .face {
   backface-visibility: hidden;
