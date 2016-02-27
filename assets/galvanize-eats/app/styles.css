@@ -4,7 +4,7 @@ main, body, html {
 }
 
 .hero {
-  background-image: url('/media/restaurant-hero-image.jpg');
+  background-image: url('../media/restaurant-hero-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
