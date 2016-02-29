@@ -1,0 +1,72 @@
+<section class="">
+  <scheader></scheader>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      Search By Category
+      <select ng-model="cat" class="" name="cat">
+        <option ng-repeat="category in getCategories()">{{category}}</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      Search By Name: <input ng-model="search" type="text" name="search" value="">
+    </div>
+    <div class="col-sm-2 col-sm-offset-4">
+      <button class="btn btn-sm btn-primary" ng-click="changeView('cart')" type="button" name="button">Checkout | {{itemCount()}} Items</button>
+    </div>
+  </div>
+  <div class="row">
+    <hr>
+  </div>
+</div>
+<div class="container" ng-repeat="storeItem in storeItems | filter:search | filter:cat">
+  <!-- {{storeItem._id}} -->
+  <div class="row">
+    <div class="col-sm-3">
+      <img ng-src="{{storeItem.imageUrl}}" alt="" width="100" />
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-7">
+          <div ng-model="item" class="row">
+            {{storeItem.name}}
+          </div>
+          <div class="row">
+            Price: {{storeItem.price/100 | currency}}
+          </div>
+          <div class="row">
+            Caffeine Scale: {{storeItem.caffeineScale}}
+          </div>
+          <div class="row">
+            Ingredients: <small><em>{{storeItem.ingredients}}</em></small>
+          </div>
+          <div class="row">
+            Rating: {{storeItem.rating}}
+          </div>
+          <div class="row">
+            In-Stock: {{storeItem.inStock}}
+          </div>
+          <div class="row">
+            Categories:
+            <ul>
+              <li ng-repeat="category in storeItem.categories">{{category}}</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-sm-3" >
+          Quantity: <select  ng-model="qty" class="" name="qty">
+            <option ng-repeat="x in [1,2,3,4,5,6,7,8,9,10]">{{x}}</option>
+          </select>
+        </div>
+        <div class="col-sm-2">
+          <input class="btn btn-default btn-sm btn-primary" ng-click="addCart(storeItem, qty || 1)" type="button" name="name" value="Add to Cart">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <hr>
+  </div>
+</div>

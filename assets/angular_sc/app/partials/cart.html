@@ -1,0 +1,52 @@
+<section class="">
+  <coheader></coheader>
+</section>
+
+
+
+<div class="container-fixed" ng-repeat="storeItem in cart">
+  <!-- {{storeItem._id}} -->
+  <div class="row">
+    <div class="col-sm-3">
+      <img ng-src="{{storeItem.imageUrl}}" alt="" width="100" />
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-7">
+          <div ng-model="item" class="row">
+            {{storeItem.name}}
+          </div>
+          <div class="row">
+            Price: {{storeItem.price/100 | currency}}
+          </div>
+          <div class="row">
+            Caffeine Scale: {{storeItem.caffeineScale}}
+          </div>
+          <div class="row">
+            Ingredients: <small><em>{{storeItem.ingredients}}</em></small>
+          </div>
+          <div class="row">
+            Rating: {{storeItem.rating}}
+          </div>
+        </div>
+        <div class="col-sm-3" >
+          Quantity: <input  ng-model="storeItem.qty" string-to-number value="{{storeItem.qty}}" type="number" min="0" class="" name="qty">
+        </div>
+        <div class="col-sm-2">
+          Sub Total: {{storeItem.qty * storeItem.price/100 | currency}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <hr>
+  </div>
+
+</div>
+<div class="container-fixed">
+  <div class="row">
+    <div class="col-sm-2 col-sm-offset-10">
+      <b>Total: {{ getTotal() | currency:"$":2}}</b>
+    </div>
+  </div>
+</div>
