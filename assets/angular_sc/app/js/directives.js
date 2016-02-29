@@ -1,11 +1,11 @@
 angular.module('sc').directive('scheader', function() {
   return {
-    templateUrl: '/templates/scheader.html'
+    templateUrl: 'templates/scheader.html'
   };
 });
 angular.module('sc').directive('coheader', function() {
   return {
-    templateUrl: '/templates/coheader.html'
+    templateUrl: 'templates/coheader.html'
   };
 });
 angular.module('sc').directive('stringToNumber', function() {
